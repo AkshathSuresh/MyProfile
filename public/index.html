@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+
+
+    <title>My Profile</title>
+
+</head>
+<body class="font-body antialiased">
+
+   <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3">
+    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+        <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+            <a href="https://aksr666.blogspot.com/" class="text-sm inline-block font-bold leading-relaxed mr-4 py-2 whitespace-nowrap uppercase  text-white">
+                My Blog
+            </a>
+
+            <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded-lg bg-transparent block lg:hidden outline-none focus:outline-none" type="button" id="butt">
+                <i class="text-white fas fa-bars"></i>
+            </button>
+
+        </div>
+        <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden" id="hello">
+            <ul class="flex flex-col lg:flex-row list-none mr-auto">
+                <li class="flex items-center">
+                    <a href="https://lhohq.info/" class="lg:text-white lg:hover:text-gray-300 text-gray-700 px-3 py-4 lg:py-2 flex items-center uppercase text-xs font-bold">
+                        <i class="lg:text-gray-300 text-gray-600 far fa-file-alt text-lg leading-lg mr-2"></i>
+                    Do not Click</a>
+                </li>
+            </ul>
+            <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+                <li class="flex items-center">
+                    <a href="https://github.com/AkshathSuresh" class="lg:text-white lg:hover:text-gray-300 text-gray-700 px-3 py-4 flex items-center text-xs uppercase font-bold">
+                        <i class="lg:text-gray-400 text-gray-600 fab fa-github text-lg leading-lg hover:text-white transition-all ease-out duration-500"></i>
+                        <span class="lg:hidden inline-block ml-2">Star</span>
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <a href="https://www.instagram.com/666aksr/" class="lg:text-white lg:hover:text-gray-300 text-gray-700 px-3 py-4 flex items-center text-xs uppercase font-bold">
+                        <i class="lg:text-gray-400 text-gray-600 fab fa-instagram text-lg leading-lg hover:text-white transition-all ease-out duration-500"></i>
+                        <span class="lg:hidden inline-block ml-2">Follow</span>
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <button type="button" class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded-lg shadow hover:shadow-lg hover:text-green-500 outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 transition-all ease-in-out duration-500">
+                        <i class="fas fa-arrow-alt-circle-down"></i>
+                        Show Off
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+   </nav>
+
+   <main class="profile-page">
+    <section class="relative block" style="height:500px;">
+        <div
+        class="absolute top-0 w-full h-full bg-center bg-cover"
+        style='background-image: url("https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2710&amp;q=80");'
+      >
+        <span
+          id="blackOverlay"
+          class="w-full h-full absolute opacity-50 bg-black"
+        ></span>
+      </div>
+      <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden" style="height:700px;">
+        <svg
+        class="absolute bottom-0 overflow-hidden"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        version="1.1"
+        viewBox="0 0 2560 100"
+        x="0"
+        y="0"
+      >
+        <polygon
+          class="text-gray-300 fill-current"
+          points="2560 0 2560 100 0 100"
+        ></polygon>
+      </svg>
+        </div>
+    </section>
+    <section class="relative py-16 bg-gray-300">
+        <div class="container mx-auto px-4">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+                <div class="px-6">
+                    <div class="flex flex-wrap justify-center">
+                        <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                            <div class="relative">
+                                <img src="img/picturesss.jpg" alt="..." class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 hover:grayscale transition-all ease-linear duration-500" style="max-width:150px;">
+                            </div>
+                        </div>
+                        <div class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
+                            <div class="py-6 px-3 mt-32 sm:mt-0">
+                                <button  data-popover-target="popover-contact" class="bg-purple-500 active:bg-purple-600 uppercase text-white font-bold rounded-lg hover:shadow-lg hover:text-black shadow text-xs px-4 py-2 outline-none focus:outline-none sm:mr-2 mb-1" type="button"
+
+                                >Contact</button>
+                                <div data-popover id="popover-contact" role="tooltip" class="absolute z-10 bg-gray-700 inline-block w-64 text-sm font-light text-yellow-400 transition-opacity duration-300 border border-gray-200 rounded-lg shadow-sm opacity-0">
+                                    <div class="px-3 py-2 bg-black border-b border-gray-200 rounded-t-lg">
+                                        <h3 class="font-semibold text-yellow-500">Contact Me!</h3>
+                                    </div>
+                                    <div class="px-3 py-2 flex justify-between items-center">
+                                        <p>
+                                            <i class="fas fa-phone-alt"></i>
+                                            +91 7592897239
+
+                                        </p>
+
+                                        <a href="itsaksr@gmail.com" class="px-3 py-2">
+                                            <i class="fas fa-envelope"></i>
+                                            Email</a>
+                                    </div>
+                                    <div data-popper-arrow></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full lg:w-4/12 px-4 lg:order-1">
+                            <div class="flex justify-center py-4 lg:pt-4 pt-8">
+                                <div class="mr-4 p-3 text-center">
+                                    <span class="text-xl font-bold block uppercase tracking-wide text-gray-600">7.39</span>
+                                    <span class="text-sm text-gray-500 italic">CGPA</span>
+                                </div>
+                                <div class="mr-4 p-3 text-center">
+                                    <span class="text-xl font-bold block uppercase tracking-wide text-gray-600">94.3%</span>
+                                    <span class="text-sm text-gray-500 italic">12th(CBSE)</span>
+                                </div>
+                                <div class="mr-4 p-3 text-center">
+                                    <span class="text-xl font-bold block uppercase tracking-wide text-gray-600">92.8%</span>
+                                    <span class="text-sm text-gray-500 italic">10th(CBSE)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-12">
+                        <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-700">Akshath Suresh R Rao</h3>
+                        <div class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold  hover:text-gray-700">
+                            <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-400"></i>
+                            Kochi, Kerala
+                        </div>
+                        <div class="mb-2 text-gray-700 mt-10">
+                            <i class="fas fa-book-open"></i>
+                            Bachelor of Technology in Artificial Intelligence
+                            <span class=" justify-end block blur-sm hover:blur-none transition-all ease-in-out duration-500">2020-2024</span>
+                        </div>
+                        <div class="mb-2 text-gray-700">
+                            <a href="https://www.amrita.edu/" class="hover:text-blue-500">
+                                <i class="fas fa-university"></i>
+                                Amrita Vishwa Vidya Peetam, Amritapuri
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="mt-10 py-10 border-t border-gray-300 text-center">
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full lg:w-9/12 px-4">
+                                <p class="mb-4 text-lg leading-relaxed text-gray-800">
+                                    Committed to learning and dedicated to the domain of my interest. Confident in Python Language. Effcient in managing teams and is able to work in a large group. Writing is my forte, hoping to publish a book this year.
+                                </p>
+                                <div class="flex justify-center p-16">
+                                    <div class="bg-pink-500 text-white btn hover:shadow-lg hover:text-black transform hover:scale-125 transition-all ease-out duration-500" id="show">Show More</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden" id="hide">
+                        <div class="">
+                            <h4 class="font-bold mt-7 px-4 py-4 border-b-4 border-gray-500 pb-2 text-xl">Areas of Interest</h4>
+                            <div class="mt-7 grid lg:grid-cols-3 gap-10">
+                                <div class="card max-w-sm cursor-pointer blur-sm hover:blur-none hover:shadow-lg">
+                                    <img src="img/tolkien-logo.png" alt="..." class="w-full h-32 sm:h-48 object-cover">
+                                    <div class="m-4">
+                                        <span class="font-bold">Writing</span>
+                                        <span class="block text-gray-500 text-sm italic">English Literature</span>
+                                    </div>
+                                </div>
+                                <div class="card max-w-sm cursor-pointer blur-sm hover:blur-none hover:shadow-lg">
+                                    <img src="img/machine.png" alt="..." class="w-full h-32 sm:h-48 object-contain">
+                                    <div class="m-4">
+                                        <span class="font-bold">Machine Learning</span>
+                                        <span class="block text-gray-500 text-sm italic">And its applications</span>
+                                    </div>
+                                </div>
+                                <div class="card max-w-sm cursor-pointer blur-sm hover:blur-none hover:shadow-lg">
+                                    <img src="img/planet.png" alt="..." class="w-full h-32 sm:h-48 object-contain">
+                                    <div class="m-4">
+                                        <span class="font-bold">Applications of AI</span>
+                                        <span class="block text-gray-500 text-sm italic">In Environmental Science</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr class="w-48 h-1 mx-auto my-4 bg-gray-400 border-0 rounded md:my-10">
+                        <div class="">
+                            <h4 class="font-bold mt-7 px-4 py-4 border-b-4 border-gray-400 pb-2 text-xl">Projects</h4>
+
+                                <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white text-gray-700" data-inactive-classes="text-gray-600">
+                                    <h2 id="accordion-flush-heading-1">
+                                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-400" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+                                            <span>AI Ethics</span>
+                                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                        </button>
+                                    </h2>
+                                <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+                                    <div class="py-5 font-light border-b border-gray-300">
+                                        <p class="mb-2 text-gray-700 ">Currently working on Reducing Bias in Machine Learning models taking the UTKFace dataset as our primary target.</p>
+                                        <p class="text-gray-700">The dataset consists of facial features of different races. Our aim is to check whether the model is able to predict features when it is trained on one race.</p>
+                                    </div>
+                                </div>
+                                    <h2 id="accordion-flush-heading-2">
+                                    <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-700 border-b border-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+                                        <span>Voice Controlled Robot using ROS</span>
+                                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                    </button>
+                                    </h2>
+                                    <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                                    <div class="py-5 font-light border-b border-gray-300">
+                                        <p class="mb-2 text-gray-700">Successfully implemented a voice controlled robot using ROS in a Raspberry pi system.</p>
+                                        <p class="text-gray-700">Several components were used to create the four wheeled robot. It responded well to our voice commands which included simple ones like 'Left', 'Right', etc</p>
+                                    </div>
+                                    </div>
+                                    <h2 id="accordion-flush-heading-3">
+                                    <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-700 border-b border-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+                                        <span>Tobacco and Oral Health</span>
+                                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                    </button>
+                                    </h2>
+                                    <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                                    <div class="py-5 font-light border-b border-gray-300 ">
+                                        <p class="mb-2 text-gray-700 ">As a part of Student Social Responsibility(SSR), I successfully completed this project which aimed at spreading the awareness about the ill-effects of tobacco on our oral health among school students.</p>
+                                        <p class="mb-2 text-gray-700 ">
+                                        <p class="mb-2 text-gray-700 ">Learn more about SSR:</p>
+                                        <ul class="pl-5 text-gray-500 list-d6sc">
+                                        <li><a href="https://ssr.amrita.ac.in/" class="text-blue-600 hover:underline">Student's Social Responsibility</a></li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <hr class="w-48 h-1 mx-auto my-4 bg-gray-400 border-0 rounded md:my-10">
+                        <div class="">
+                            <h4 class="font-bold mt-7 px-4 py-4 border-b-4 border-gray-400 pb-3 text-xl">Favorite Books</h4>
+                            <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                                <!-- Carousel wrapper -->
+                                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                                    <!-- Item 1 -->
+                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                        <img src="img/lotr.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-scale-down" alt="...">
+                                    </div>
+                                    <!-- Item 2 -->
+                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                        <img src="img/bartimaeus.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-scale-down" alt="...">
+                                    </div>
+                                    <!-- Item 3 -->
+                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                        <img src="img/earth.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-scale-down" alt="...">
+                                    </div>
+                                    <!-- Item 4 -->
+                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                        <img src="img/World_Without_End.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-scale-down" alt="...">
+                                    </div>
+                                    <!-- Item 5 -->
+                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                        <img src="img/sea-of-stars.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-scale-down" alt="...">
+                                    </div>
+                                </div>
+                                <!-- Slider indicators -->
+                                <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                                </div>
+                                <!-- Slider controls -->
+                                <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                                        <span class="sr-only">Previous</span>
+                                    </span>
+                                </button>
+                                <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                        <span class="sr-only">Next</span>
+                                    </span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button data-drawer-target="drawer-swipe" data-drawer-show="drawer-swipe" data-drawer-placement="bottom" data-drawer-edge="true" data-drawer-edge-offset="bottom-[60px]" aria-controls="drawer-swipe">
+                        </button>
+                    </div>
+
+
+                    <div id="drawer-swipe" class="fixed z-40 w-full overflow-y-auto bg-white border-t border-gray-300 rounded-t-lg transition-transform left-0 right-0 translate-y-full bottom-[60px]" tabindex="-1" aria-labelledby="drawer-swipe-label">
+                        <div class="p-4 cursor-pointer hover:bg-gray-50" data-drawer-toggle="drawer-swipe">
+                            <span class="absolute w-8 h-1 -translate-x-1/2 bg-gray-300 rounded-lg top-3 left-1/2 dark:bg-gray-600"></span>
+                            <h5 id="drawer-swipe-label" class="inline-flex items-center text-base text-gray-700"><svg class="w-5 h-5 mr-2" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM14 11a1 1 0 011 1v1h1a1 1 0 110 2h-1v1a1 1 0 11-2 0v-1h-1a1 1 0 110-2h1v-1a1 1 0 011-1z"></path></svg>FSD Projects</h5>
+                        </div>
+                        <div class="grid grid-cols-3 gap-4 p-4 lg:grid-cols-4">
+                            <div class="p-4 rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-200">
+                                <div class="flex justify-center items-center p-2 mx-auto mb-2 max-w-[48px] bg-gray-300 rounded-full w-18 h-18">
+                                    <svg class="inline w-8 h-8 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path></svg>
+                                </div>
+                                <div class="font-medium text-center text-gray-600">Coming Soon!</div>
+                            </div>
+                            <div class="p-4 rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-200" id="press">
+                                <div class="flex justify-center items-center p-2 mx-auto mb-2 max-w-[48px] bg-gray-300 rounded-full w-18 h-18">
+                                    <svg class="inline w-8 h-8 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z" clip-rule="evenodd"></path></svg>
+                                </div>
+                                <div class="font-medium text-center text-gray-600">Wordle Clone</div>
+                            </div>
+                            <div class="hidden p-4 rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-200 lg:block">
+                                <div class="flex justify-center items-center p-2 mx-auto mb-2 max-w-[48px] bg-gray-300 rounded-full w-18 h-18">
+                                    <svg class="inline w-8 h-8 text-gray-600" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 100 4v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2a2 2 0 100-4V6z"></path></svg>
+                                </div>
+                                <div class="hidden font-medium text-center text-gray-600">Coming Soon!</div>
+                            </div>
+                            <div class="p-4 rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-200">
+                                <div class="flex justify-center items-center p-2 mx-auto mb-2 max-w-[48px] bg-gray-300 rounded-full w-18 h-18">
+                                    <svg class="inline w-8 h-8 text-gray-600" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path></svg>
+                                </div>
+                                <div class="font-medium text-center text-gray-600">Coming Soon!</div>
+                            </div>
+                            <div class="p-4 rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-200">
+                                <div class="flex justify-center items-center p-2 mx-auto mb-2 max-w-[48px] bg-gray-300 rounded-full w-18 h-18">
+                                    <svg class="inline w-8 h-8 text-gray-600" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"></path></svg>
+                                </div>
+                                <div class="font-medium text-center text-gray-600">Coming Soon!</div>
+                            </div>
+                            <div class="p-4 rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-200">
+                                <div class="flex justify-center items-center p-2 mx-auto mb-2 max-w-[48px] bg-gray-300 rounded-full w-18 h-18">
+                                    <svg class="inline w-8 h-8 text-gray-600" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"></path></svg>
+                                </div>
+                                <div class="font-medium text-center text-gray-600">Coming Soon!</div>
+                            </div>
+                            <div class="hidden p-4 rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-200 lg:block">
+                                <div class="flex justify-center items-center p-2 mx-auto mb-2 max-w-[48px] bg-gray-300 rounded-full w-18 h-18">
+                                    <svg class="inline w-8 h-8 text-gray-600" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+                                </div>
+                                <div class="font-medium text-center text-gray-600">Coming Soon!</div>
+                            </div>
+                            <div class="p-4 rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-200">
+                                <div class="flex justify-center items-center p-2 mx-auto mb-2 max-w-[48px] bg-gray-300 rounded-full w-18 h-18">
+                                    <svg class="inline w-8 h-8 text-gray-600" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z"></path></svg>
+                                </div>
+                                <div class="font-medium text-center text-gray-600">Coming Soon!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   </main>
+
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+
+</body>
+</html>
